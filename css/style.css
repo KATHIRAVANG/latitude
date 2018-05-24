@@ -1,0 +1,33 @@
+/* ---------- slider ---------- */
+
+.slider .image{
+  height: 30rem;
+}
+
+.slider .info{
+  height: auto;
+  bottom: 4rem;
+  left: 4rem;
+  width: 27rem;
+}
+
+.slider .info h1{
+  width: 24rem;
+}
+
+.slider button{
+  bottom: 4rem;
+  right: 5rem;
+  position: absolute;
+}
+
+.slider .swiper-pagination-bullet{
+  background: #FFF;
+  opacity: 0.6;
+}
+
+.slider .swiper-pagination-bullet-active{
+  background: #005781;
+  opacity: 1;
+}
+

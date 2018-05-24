@@ -10,6 +10,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/swiper.min.css">
   <link rel="shortcut icon" type="image/png" href="img/favicon.ico"/>
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
 
@@ -20,5 +21,66 @@
 
 <body>
 
+  <!-- slider -->
+
+  <section class="slider">
+    <div class="swiper-container">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <div class="left info slight">
+            <h1>room to breathe</h1>
+            <p>Surrounding by parkland, Latitude’s oversize lots gives you room to breathe.</p>
+            <p>Our average lots sizes are larger, with direct access to more than 30 hectares of reserve for you to explore.</p>
+          </div>
+          <div class="image">
+            <a href="#" class="right"><button>learn more</button></a>
+            <img src="img/690274752.jpg" alt="">
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="left info slight">
+            <h1>room to grow</h1>
+            <p>Be part of a growing community at Latitude</p>
+            <p>With plans for a sporting precinct right at your doorstep on the way and close to schools and shopping Latitude has it within easy reach.</p>
+          </div>
+          <div class="image">
+            <a href="#" class="right"><button>learn more</button></a>
+            <img src="img/647249792.jpg" alt="">
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="left info slight">
+            <h1>room to relax</h1>
+            <p>Latitude’s location let’s unwind and feel at home. Let us take care of all the details with our special buyer concierge service so you can relax in your new home sooner.</p>
+            <p>Our dedicated concierge works with you to help you make build, façade, colour, upgrade and interior selections. They also ensure your build stays on track, runs to budget and get delivered on time.</p>
+          </div>
+          <div class="image">
+            <a href="#" class="right"><button>learn more</button></a>
+            <img src="img/609038734.jpg" alt="">
+          </div>
+        </div>
+      </div>
+      <div class="swiper-pagination"></div>
+    </div>
+  </section>
+  <script src="js/swiper.min.js"></script>
+
+  <script type="text/javascript">
+    var swiper = new Swiper('.swiper-container', {
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+      autoplay: {
+        delay: 4500,
+        disableOnInteraction: false,
+      },
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+      },
+      grabCursor: true,
+    });
+  </script>
 </body>
 </html>
