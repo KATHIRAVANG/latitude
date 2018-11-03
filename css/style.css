@@ -1,23 +1,22 @@
-
 /* ---------- basic ---------- */
 
 body,
-html{
-  background: #012D40;
-  background: radial-gradient(circle at top, #005781, #012D40 20%);
-  font-family: "Museo Sans";
+html {
+  background: #012d40;
+  background: radial-gradient(circle at top, #005781, #012d40 20%);
+  font-family: 'Museo Sans', sans-serif !important;
   margin: 0;
 }
 
-.clear{
+.clear {
   clear: both;
 }
 
-.hide{
+.hide {
   display: none;
 }
 
-.show{
+.show {
   display: block;
 }
 
@@ -27,87 +26,87 @@ h1,
 h2,
 h3,
 h5,
-h6{
+h6 {
   margin-top: 0;
 }
 
-h1{
-  font-family: "Minion Pro" !important;
+h1 {
+  font-family: 'Minion Pro' !important;
   font-weight: 400;
   font-size: 4.9rem;
   margin-bottom: 1.5rem;
   line-height: 4rem;
-  color: #7E8E50;
+  color: #7e8e50;
 }
 
-h2{
+h2 {
   font-size: 1.8rem;
   font-weight: 500;
   color: #005781;
 }
 
 h3,
-h4{
+h4 {
   text-transform: uppercase;
   font-weight: 500;
   letter-spacing: 5px;
 }
 
-h3{
+h3 {
   font-size: 2.4rem;
-  color: #012D40;
+  color: #012d40;
   margin-bottom: 1rem;
 }
 
-h4{
-  color: #FFF;
+h4 {
+  color: #fff;
   font-size: 0.9rem;
   line-height: 1.6rem;
 }
 
-h5{
+h5 {
   font-size: 1.1rem;
   font-weight: 500;
-  color: #012D40;
+  color: #012d40;
   margin: 0;
 }
 
-p{
+p {
   font-weight: 300;
   font-size: 0.9rem;
 }
 
-a{
+a {
   text-decoration: none;
 }
 
-b{
+b {
   font-weight: 500;
 }
 
 /* ---------- layout ---------- */
 
-section{
+section {
   max-width: 70rem;
   position: relative;
   margin: auto;
 }
 
-.thick{
+.thick {
   padding: 4rem;
 }
 
-.thin{
+.thin {
   padding: 2rem;
 }
 
 .float,
-.info{
+.info {
   position: absolute;
-  box-shadow: 0 0 50px 0 rgba(0,0,0,0.3);
+  box-shadow: 0 0 50px 0 rgba(0, 0, 0, 0.3);
 }
 
-.split{
+.split {
   height: 4rem;
   width: 100%;
   clear: both;
@@ -115,63 +114,66 @@ section{
 
 /* ---------- align ---------- */
 
-.center{
+.center {
   margin: auto;
   text-align: center;
 }
 
-.right{
+.right {
   right: 0;
   float: right;
 }
 
-.left{
+.left {
   left: 0;
   float: left;
 }
 
 /* ---------- colours ---------- */
 
-.white{
-  background: #FFFFFF;
+.white {
+  background: #ffffff;
 }
 
-.blue{
-  background: #DAE4EA;
+.blue {
+  background: #dae4ea;
 }
 
 /* ---------- button ---------- */
 
-button{
+button,
+.button {
   background: #005781;
   border: none;
   padding: 1rem 1.5rem;
-  color: #FFF;
-  font-family: "Museo Sans";
+  color: #fff;
+  font-family: 'Museo Sans';
   text-transform: uppercase;
   font-size: 0.9rem;
   letter-spacing: 2px;
-  box-shadow: 0 0 20px 0 rgba(0,87,129,0.4);
+  box-shadow: 0 0 20px 0 rgba(0, 87, 129, 0.4);
   margin-top: 1rem;
   transition: 0.4s;
 }
 
-button:hover{
-  background: #012D40;
+button:hover,
+.button:hover {
+  background: #012d40;
   cursor: pointer;
 }
 
-button:focus{
+button:focus,
+.button:focus {
   outline: none;
 }
 
 /* ---------- image ---------- */
 
-.image{
-  background: #FFFFFF;
+.image {
+  background: #ffffff;
 }
 
-.image img{
+.image img {
   height: 100%;
   width: 100%;
   object-fit: cover;
@@ -179,22 +181,22 @@ button:focus{
 
 /* ---------- logo ---------- */
 
-img.logo{
+img.logo {
   width: 20rem;
   -webkit-user-drag: none;
 }
 
 /* ---------- intro ---------- */
 
-.intro{
+.intro {
   margin-top: 4rem;
 }
 
-.intro .right{
+.intro .right {
   width: 28rem;
 }
 
-.intro .float{
+.intro .float {
   width: 26rem;
   left: 4rem;
   top: -4rem;
@@ -203,45 +205,45 @@ img.logo{
 
 /* ---------- packages ---------- */
 
-.packages ul{
+.packages ul {
   list-style: none;
   padding: 0;
   margin: 0;
-  display:flex;
-  justify-content:space-between;
+  display: flex;
+  justify-content: space-between;
   flex-wrap: wrap;
   align-items: center;
 }
 
-.packages li{
+.packages li {
   width: 21rem;
   text-align: center;
   margin: auto;
   position: relative;
 }
 
-.packages li:nth-child(n+4){
+.packages li:nth-child(n + 4) {
   margin-top: 3rem;
 }
 
-.packages li p{
+.packages li p {
   margin-bottom: 0;
 }
 
-.packages li .image{
+.packages li .image {
   width: 100%;
   height: 20rem;
 }
 
 .packages li.sale:before,
-.packages li.soon:before{
+.packages li.soon:before {
   position: absolute;
   left: -1rem;
   top: -1rem;
   width: 3rem;
   height: 2rem;
   font-weight: 300;
-  color: #FFF;
+  color: #fff;
   padding: 1.5rem 1rem;
   border-radius: 100%;
   text-transform: uppercase;
@@ -249,101 +251,158 @@ img.logo{
   font-size: 0.75rem;
 }
 
-.packages li.sale:before{
-  content: "now selling";
-  background: #E1555C;
+.packages li.sale:before {
+  content: 'now selling';
+  background: #e1555c;
 }
 
-.packages li.soon:before{
-  content: "coming soon";
-  background: #7E8E50;
+.packages li.soon:before {
+  content: 'coming soon';
+  background: #7e8e50;
   line-height: 1rem;
 }
 
 /* ---------- slider ---------- */
 
-.slider .image{
+.slider .image {
   height: 34rem;
 }
 
-.slider .info{
-  background: #FFFFFF;
+.slider .info {
+  background: #ffffff;
   height: auto;
   bottom: 4rem;
   left: 4rem;
   width: 30rem;
 }
 
-.slider .info h1{
+.slider .info h1 {
   width: 24rem;
 }
 
-.slider .swiper-pagination-bullet{
-  background: #FFF;
+.slider .swiper-pagination-bullet {
+  background: #fff;
   opacity: 0.6;
 }
 
-.slider .swiper-pagination-bullet-active{
+.slider .swiper-pagination-bullet-active {
   background: #005781;
   opacity: 1;
 }
 
 /* ---------- more ---------- */
 
-.more{
-  margin-top: 4rem;
-  margin-bottom: 4rem;
+.more .image,
+.more .image img {
+  height: 33rem;
 }
 
-.more .float{
-  width: 25rem;
-  top: -4rem;
-  right: 4rem;
-  height: 100%;
+.more .float {
+  bottom: 3rem;
+  right: 3rem;
 }
 
-.more .image{
-  height: 18rem;
+/* ---------- popup ---------- */
+
+.popup.show {
+  display: block;
 }
 
-.more .image img{
-  height: 100%;
-  width: auto;
+.popup {
+  display: none;
+  background: rgba(0, 0, 0, 0.6);
+  position: fixed;
+  z-index: 1000;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+}
+
+.popup .center {
+  text-align: left;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.popup .float {
+  max-width: 30rem !important;
+  background: white;
+}
+
+.popup button {
+  margin: 0 0 3rem;
+}
+
+/* ---------- form ---------- */
+
+.register .white {
+  padding: 4rem 3rem;
+}
+
+.register form {
+  font-family: 'Museo', sans-serif;
+  width: 70%;
+  margin: 3rem auto 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.register form input[type='text'],
+.register form input.button {
+  margin: 1rem 0;
+}
+
+.register form input.button {
+  width: calc(40% + 3.2rem) !important;
+}
+
+.register form input {
+  width: 40%;
+  padding: 1rem 1.5rem;
+}
+
+.register form input:focus {
+  outline: none;
 }
 
 /* ---------- footer ---------- */
 
-footer{
+footer {
   background: #005781;
   width: 100%;
   padding: 2rem 0;
 }
 
 footer p,
-footer a{
-  color: #FFF;
+footer a {
+  color: #fff;
 }
 
-footer p{
+footer p {
   font-size: 0.8rem;
   line-height: 0.8rem;
 }
 
-footer .left{
+footer .left {
   margin-left: 4rem;
 }
 
-footer .right{
+footer .right {
   margin-right: 4rem;
   text-align: right;
 }
 
-footer ul{
+footer ul {
   list-style: none;
   padding: 0;
 }
 
-footer li{
+footer li {
   display: inline-block;
   width: 2rem;
   height: 2rem;
@@ -353,7 +412,7 @@ footer li{
   margin-left: 0.5rem;
 }
 
-footer li .fab{
+footer li .fab {
   width: 2rem;
   padding-top: 0.5rem;
   text-align: center;
@@ -362,135 +421,135 @@ footer li .fab{
 
 /* ---------- responsive ---------- */
 
-@media screen and (max-width: 1120px){
-  section{
+@media screen and (max-width: 1120px) {
+  section {
     width: calc(100% - 2rem);
   }
 
   .intro .right,
-  .intro .float{
+  .intro .float {
     width: 35%;
   }
 
-  .packages li{
+  .packages li {
     width: 46%;
   }
 
-  .packages li:nth-child(n+3){
+  .packages li:nth-child(n + 3) {
     margin-top: 2rem;
   }
 
-  .more .float{
-    width: 20rem;
+  .more .image,
+  .more .image img {
+    height: 100%;
   }
 
-  .more .image{
-    display: flex;
-    flex-direction:column;
-    justify-content: center;
+  .register form input {
+    width: 35%;
   }
 
-  .more .image img{
-    height: 25vw;
+  .register form input.button {
+    width: calc(35% + 3.2rem) !important;
   }
 }
 
-@media screen and (max-width: 820px){
+@media screen and (max-width: 820px) {
   body,
-  html{
-    background: radial-gradient(circle at top, #005781, #012D40 5%);
+  html {
+    background: radial-gradient(circle at top, #005781, #012d40 5%);
   }
 
-  .hide{
+  .hide {
     display: block;
   }
 
-  .show{
+  .show {
     display: none;
   }
 
   .thick,
-  .thin{
+  .thin {
     padding: 1.5rem;
   }
 
   .intro .right,
-  .intro .float,
-  .more .left,
-  .more .float{
+  .intro .float {
     width: auto;
     float: none;
     left: 0;
     position: relative;
   }
 
-  .intro .right{
+  .intro .right {
     margin-top: -4rem;
   }
 
   .intro .float,
-  .more .float,
-  .slider .info{
+  .slider .info {
     width: calc(100% - 6rem);
     margin: auto;
   }
 
-  .slider .info{
-    background: #FFFFFF;
+  .slider .info {
+    background: #ffffff;
     height: auto;
     bottom: 3rem;
     left: 1.5rem;
   }
 
-  .slider .info h1{
+  .slider .info h1 {
     font-size: 2.6rem;
     width: auto;
     margin-bottom: 0;
   }
 
-  .more{
-    margin-bottom: 0;
-  }
-
-  .more .image{
-    margin-top: -3rem;
-    background: none;
-    display: block;
-    height: auto;
-  }
-
-  .more .image img{
-    width: 100%;
-    height: auto;
-  }
-
   footer .left,
-  footer .right{
+  footer .right {
     width: 90%;
     float: none;
     text-align: center;
     margin: auto;
   }
 
-  footer ul{
+  footer ul {
     margin-top: 2rem;
   }
 }
 
-@media screen and (max-width: 620px){
-  .packages li{
+@media screen and (max-width: 640px) {
+  .packages li {
     display: block;
     width: 100%;
     margin: auto;
   }
 
-  .packages li:nth-child(n+2){
+  .packages li:nth-child(n + 2) {
     margin-top: 2rem;
+  }
+
+  .popup .float {
+    width: 80%;
+  }
+
+  .register .white {
+    padding: 3rem 1rem;
+  }
+
+  .register form {
+    flex-direction: row;
+  }
+
+  .register form input {
+    width: 100%;
+  }
+
+  .register form input.button {
+    width: calc(100% + 3.2rem) !important;
   }
 }
 
-@media screen and (max-width: 420px){
-  img.logo{
+@media screen and (max-width: 420px) {
+  img.logo {
     width: 80%;
   }
 }
