@@ -4,7 +4,7 @@ body,
 html {
   background: #012d40;
   background: radial-gradient(circle at top, #005781, #012d40 20%);
-  font-family: 'Museo Sans', sans-serif !important;
+  font-family: "Museo Sans", sans-serif !important;
   margin: 0;
 }
 
@@ -31,7 +31,7 @@ h6 {
 }
 
 h1 {
-  font-family: 'Minion Pro' !important;
+  font-family: "Minion Pro" !important;
   font-weight: 400;
   font-size: 4.9rem;
   margin-bottom: 1.5rem;
@@ -147,7 +147,7 @@ button,
   border: none;
   padding: 1rem 1.5rem;
   color: #fff;
-  font-family: 'Museo Sans';
+  font-family: "Museo Sans";
   text-transform: uppercase;
   font-size: 0.9rem;
   letter-spacing: 2px;
@@ -242,7 +242,7 @@ img.logo {
   top: -1rem;
   width: 3rem;
   height: 2rem;
-  font-weight: 300;
+  font-weight: 500;
   color: #fff;
   padding: 1.5rem 1rem;
   border-radius: 100%;
@@ -252,12 +252,12 @@ img.logo {
 }
 
 .packages li.sale:before {
-  content: 'now selling';
+  content: "now selling";
   background: #e1555c;
 }
 
 .packages li.soon:before {
-  content: 'coming soon';
+  content: "coming soon";
   background: #7e8e50;
   line-height: 1rem;
 }
@@ -344,7 +344,7 @@ img.logo {
 }
 
 .register form {
-  font-family: 'Museo', sans-serif;
+  font-family: "Museo", sans-serif;
   width: 70%;
   margin: 3rem auto 0;
   display: flex;
@@ -352,7 +352,7 @@ img.logo {
   justify-content: space-between;
 }
 
-.register form input[type='text'],
+.register form input[type="text"],
 .register form input.button {
   margin: 1rem 0;
 }
