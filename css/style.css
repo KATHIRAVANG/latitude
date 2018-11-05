@@ -60,7 +60,7 @@ h3 {
 
 h4 {
   color: #fff;
-  font-size: 0.9rem;
+  font-size: 1.2rem;
   line-height: 1.6rem;
 }
 
@@ -142,7 +142,8 @@ section {
 /* ---------- button ---------- */
 
 button,
-.button {
+.button,
+input[type="submit"] {
   background: #005781;
   border: none;
   padding: 1rem 1.5rem;
@@ -157,13 +158,15 @@ button,
 }
 
 button:hover,
-.button:hover {
+.button:hover,
+input[type="submit"]:hover {
   background: #012d40;
   cursor: pointer;
 }
 
 button:focus,
-.button:focus {
+.button:focus,
+input[type="submit"]:focus {
   outline: none;
 }
 
