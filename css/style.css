@@ -357,6 +357,7 @@ img.logo {
 
 .register form input {
   -webkit-appearance: none;
+  border-radius: 0;
 }
 
 .register form input[type="text"],
