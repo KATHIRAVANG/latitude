@@ -353,6 +353,7 @@ img.logo {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  -webkit-appearance: none;
 }
 
 .register form input[type="text"],
