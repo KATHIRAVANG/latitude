@@ -353,6 +353,9 @@ img.logo {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+}
+
+.register form input {
   -webkit-appearance: none;
 }
 
