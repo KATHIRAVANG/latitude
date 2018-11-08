@@ -4,7 +4,7 @@ body,
 html {
   background: #012d40;
   background: radial-gradient(circle at top, #005781, #012d40 20%);
-  font-family: "Museo Sans", sans-serif !important;
+  font-family: "Museo Sans";
   margin: 0;
 }
 
@@ -60,7 +60,7 @@ h3 {
 
 h4 {
   color: #fff;
-  font-size: 1.2rem;
+  font-size: 0.9rem;
   line-height: 1.6rem;
 }
 
@@ -142,10 +142,9 @@ section {
 /* ---------- button ---------- */
 
 button,
-.button,
-input[type="submit"] {
+.button {
   background: #005781;
-  border: none;
+  border: none !important;
   padding: 1rem 1.5rem;
   color: #fff;
   font-family: "Museo Sans";
@@ -158,15 +157,13 @@ input[type="submit"] {
 }
 
 button:hover,
-.button:hover,
-input[type="submit"]:hover {
+.button:hover {
   background: #012d40;
   cursor: pointer;
 }
 
 button:focus,
-.button:focus,
-input[type="submit"]:focus {
+.button:hover {
   outline: none;
 }
 
@@ -245,7 +242,7 @@ img.logo {
   top: -1rem;
   width: 3rem;
   height: 2rem;
-  font-weight: 500;
+  font-weight: 300;
   color: #fff;
   padding: 1.5rem 1rem;
   border-radius: 100%;
@@ -295,87 +292,25 @@ img.logo {
 
 /* ---------- more ---------- */
 
-.more .image,
-.more .image img {
-  height: 33rem;
+.more {
+  margin-top: 4rem;
+  margin-bottom: 4rem;
 }
 
 .more .float {
-  bottom: 3rem;
-  right: 3rem;
+  width: 25rem;
+  top: -4rem;
+  right: 4rem;
+  height: 100%;
 }
 
-/* ---------- popup ---------- */
-
-.popup.show {
-  display: block;
+.more .image {
+  height: 18rem;
 }
 
-.popup {
-  display: none;
-  background: rgba(0, 0, 0, 0.6);
-  position: fixed;
-  z-index: 1000;
-  top: 0;
-  bottom: 0;
-  right: 0;
-  left: 0;
-}
-
-.popup .center {
-  text-align: left;
-  width: 100vw;
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.popup .float {
-  max-width: 30rem !important;
-  background: white;
-}
-
-.popup button {
-  margin: 0 0 3rem;
-}
-
-/* ---------- form ---------- */
-
-.register .white {
-  padding: 4rem 3rem;
-}
-
-.register form {
-  font-family: "Museo", sans-serif;
-  width: 70%;
-  margin: 3rem auto 0;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-}
-
-.register form input {
-  -webkit-appearance: none;
-  border-radius: 0;
-}
-
-.register form input[type="text"],
-.register form input.button {
-  margin: 1rem 0;
-}
-
-.register form input.button {
-  width: calc(40% + 3.2rem) !important;
-}
-
-.register form input {
-  width: 40%;
-  padding: 1rem 1.5rem;
-}
-
-.register form input:focus {
-  outline: none;
+.more .image img {
+  height: 100%;
+  width: auto;
 }
 
 /* ---------- footer ---------- */
@@ -427,6 +362,45 @@ footer li .fab {
   margin: auto;
 }
 
+/* ---------- form ---------- */
+
+.register .white {
+  padding: 4rem 3rem;
+}
+
+.register form {
+  font-family: "Museo", sans-serif;
+  width: 70%;
+  margin: 3rem auto 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.register form input {
+  -webkit-appearance: none;
+  border-radius: 0;
+  border: 1px solid #eee;
+}
+
+.register form input[type="text"],
+.register form input.button {
+  margin: 1rem 0;
+}
+
+.register form input.button {
+  width: calc(40% + 3.2rem) !important;
+}
+
+.register form input {
+  width: 40%;
+  padding: 1rem 1.5rem;
+}
+
+.register form input:focus {
+  outline: none;
+}
+
 /* ---------- responsive ---------- */
 
 @media screen and (max-width: 1120px) {
@@ -447,17 +421,18 @@ footer li .fab {
     margin-top: 2rem;
   }
 
-  .more .image,
+  .more .float {
+    width: 20rem;
+  }
+
+  .more .image {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
   .more .image img {
-    height: 100%;
-  }
-
-  .register form input {
-    width: 35%;
-  }
-
-  .register form input.button {
-    width: calc(35% + 3.2rem) !important;
+    height: 25vw;
   }
 }
 
@@ -481,7 +456,9 @@ footer li .fab {
   }
 
   .intro .right,
-  .intro .float {
+  .intro .float,
+  .more .left,
+  .more .float {
     width: auto;
     float: none;
     left: 0;
@@ -493,6 +470,7 @@ footer li .fab {
   }
 
   .intro .float,
+  .more .float,
   .slider .info {
     width: calc(100% - 6rem);
     margin: auto;
@@ -511,6 +489,22 @@ footer li .fab {
     margin-bottom: 0;
   }
 
+  .more {
+    margin-bottom: 0;
+  }
+
+  .more .image {
+    margin-top: -3rem;
+    background: none;
+    display: block;
+    height: auto;
+  }
+
+  .more .image img {
+    width: 100%;
+    height: auto;
+  }
+
   footer .left,
   footer .right {
     width: 90%;
@@ -524,7 +518,7 @@ footer li .fab {
   }
 }
 
-@media screen and (max-width: 640px) {
+@media screen and (max-width: 620px) {
   .packages li {
     display: block;
     width: 100%;
@@ -533,10 +527,6 @@ footer li .fab {
 
   .packages li:nth-child(n + 2) {
     margin-top: 2rem;
-  }
-
-  .popup .float {
-    width: 80%;
   }
 
   .register .white {
