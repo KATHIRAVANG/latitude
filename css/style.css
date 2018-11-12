@@ -1,3 +1,13 @@
+@font-face {
+  font-family: "Minion Pro", sans-serif;
+  src: "/fonts/Minion Pro Medium.ttf";
+}
+
+@font-face {
+  font-family: "Museo Sans", sans-serif;
+  src: "/fonts/MuseoSans_500.otf";
+}
+
 /* ---------- basic ---------- */
 
 body,
