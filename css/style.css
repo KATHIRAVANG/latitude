@@ -196,6 +196,55 @@ img.logo {
   -webkit-user-drag: none;
 }
 
+/* ---------- promo-banner---------- */
+
+.promo-banner {
+  margin-bottom: 12rem;
+  position: relative;
+}
+
+.promo-banner ul {
+  background-color: #005781;
+  color: white;
+  padding: 1rem;
+  font-weight: 500;
+  list-style: none;
+  padding-left: none;
+}
+
+.promo-banner ul li {
+  line-height: 25px;
+}
+
+.promo-banner .subtitle {
+  color: #005781;
+  padding-left: 1rem;
+}
+
+.promo-banner .blue-text {
+  padding-left: 1rem;
+  font-weight: 600;
+  margin-bottom: 0rem;
+  font-size: 20px;
+  margin-top: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.promo-banner .blue-bar {
+  background-color: #e5eef6;
+  width: 100%;
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  text-align: center;
+  margin-top: 1rem;
+}
+
+.promo-banner .blue-bar p {
+  font-size: 20px;
+  font-weight: 200;
+}
+
 /* ---------- intro ---------- */
 
 .temp {
